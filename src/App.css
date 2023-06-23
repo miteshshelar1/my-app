@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Lato', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.twitter{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.sidebar{
+  width: 25%;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  border-right: 1px solid #e6ecf0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li a {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: black;
+padding: 10px 35px;
+font-weight: 450;
+font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  background: #e8f5fe;
+  color: #1da1f2;
+  border-radius: 50px;
+  
+}
+
+.icons{
+  margin-right: 15px;
+  font-size: 23px;
+}
+
+.logo {
+  color: #1da1f2;
+}
+.sidebar_Btn {
+  margin: 22px 0;
+}
+
+.sidebar_Btn a{
+  text-decoration: none;
+  background:#1da1f2;
   color: white;
+  padding: 15px 90px;
+  margin: 25px 35px;
+  border-radius: 50px;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* post styles */
+.posts{
+  width: 40%;
+  margin-left: 25%;
+  border-right: 1px solid #e6ecf0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.posts_home {
+  width: 40%;
+  position: fixed;
+  top:0;
+  padding: 15px;
+  font-weight: 700;
+  border-bottom: 1px solid #e6ecf0;
+  font-size: 18px;
+}
+.btn{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 120px;
+  
+}
+.btn main{
+  opacity: 50%;
+}
+
+.create {
+  padding-top: 130px;
+
+}
+
+.create_first {
+  display: flex;
+  padding:0 20px;
+  align-items: center;
+}
+.create_img {
+  width: 55px;
+  height: 60px;
+  overflow: hidden;
+  
+}
+.create_img img{
+  width: 100%;
+  height: 100%;
+}
+.create_input{
+  margin-left: 20px;
+}
+.create_control {
+  border: none;
+  outline: none;
+}
+
+.create_second{
+  margin-left: 20px;
+  margin-top: 15px;
+
+}
+
+.ic{
+  margin: 0 10px;
+
 }
